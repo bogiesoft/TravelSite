@@ -1,0 +1,335 @@
+/*
+Author: Mark Wilson
+Title: site.css
+Assignment: #3
+OOSD Spring Track 2015
+*/
+
+/* Reset  Margin and padding*/
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+/*Start HTML Element Style Rules*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	overflow: auto;
+	bottom: 300px;
+	min-width: 499px;
+}
+
+a{
+	color: black;
+	font-size: 16px;
+}
+
+p{
+	text-align: left;
+}
+
+input[type="text"], textarea, select {
+	background-color: #fff;
+	opacity:0.6;
+	margin: 5px;
+}
+
+header{
+	margin-top: 1%;
+}
+
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+li{
+	list-style-type: none;
+}
+/*End HTML Element Style Rules*/
+
+/*Start Header Style Rules*/
+/*Assignment 3, set background image via CSS*/
+.bg_wrapper {
+	background: url(../images/background2.jpg) no-repeat center center fixed;
+	-webkit-background-size :cover;
+	background-size :cover;
+}
+
+.menu{
+	float: right;
+}
+
+.social{
+	float: right;
+}
+
+#displayUserName{
+	color: black;
+	font-size: 16px;
+	margin-left: 55%;
+	float: left;
+}
+
+.logout{
+	float: right;
+	margin-right: 5%;
+}
+
+.navbar-inverse{
+	background-color: transparent;
+	border-style: none;
+	opacity: 0.9%;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: black;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	color: black;
+}
+
+@media (max-width: 767px){
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+	color: black;
+	}
+}
+
+#header_logo_small img{
+	float: left;
+	margin-top: 1%;
+	margin-left: 2%;
+	width: 300px;
+}
+/*End Header Style Rules*/
+
+/*Start index.php Style Rules*/
+.img_wrapper{
+	clear: both;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#background_title{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#greeting{
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+    width: 55%;
+}
+
+.spacer{
+	margin-top: 200px;
+}
+
+.package_wrapper{
+	clear: both;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+#vac_pkg{
+	display: inline-block;
+	width: 325px;
+	height: 500px;
+	padding: 10px;
+	margin: 10px;
+	color: #fff;
+	background-color: #3c3b3f;
+	border-style: solid;
+	border-width: 2px;
+	position: relative;
+	
+}
+
+#vac_pkg_min{
+	display: inline-block;
+	width: 325px;
+	height: 250px;
+	padding: 10px;
+	margin: 10px;
+	color: #fff;
+	background-color: #3c3b3f;
+	border-style: solid;
+	border-width: 2px;
+	position: relative;
+	font-size: 20px;
+}
+
+#pkgpic{
+	width: 300px;
+	height: 250px;
+}
+
+a .btn{
+	position: absolute;
+	bottom: 10px;
+	color: black;
+}
+
+/*End index.php Style Rules*/
+
+/*Start contact.php Style Rules*/
+.contact_wrapper{
+	clear: both;
+	position: relative;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact_list{
+	display: inline-block;
+	padding: 10px;
+}
+
+/*End contact.php Style Rules*/
+
+/*Start empLogin.php Style Rules*/
+.employee_wrapper{
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*End empLogin.php Style Rules*/
+
+/*Start register.php Style Rules*/
+.register_wrapper{
+	float: left;
+	width: 30%;
+	margin-left: 40%;
+}
+
+.clientLogin_wrapper{
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+	margin-right: 20%;
+}
+
+#regFloatReset{
+	clear: both;
+}
+
+#cust_info{
+	width: 450px;
+	text-align: left;
+}
+
+.fieldError
+{
+	background: yellow;
+}
+
+#noValid
+{
+	opacity: 0.6;
+	position:absolute;
+	background:yellow;
+	border:1px solid black;
+	padding: 3px 6px;
+	box-shadow:5px 5px 3px rgba(0, 0, 0, .3);
+}
+
+.hideValid
+{
+	display:none;
+}
+
+.showValid
+{
+	display:block;
+}
+
+#message
+{
+	opacity: 0.6;
+	position:absolute;
+	background:yellow;
+	border:1px solid black;
+	padding: 3px 6px;
+	box-shadow:5px 5px 3px rgba(0, 0, 0, .3);
+}
+
+.hideMessage
+{
+	display:none;
+}
+
+.showMessage
+{
+	display:block;
+}
+/*End register.php Style Rules*/
+
+
+/*Start footer.php Style Rules*/
+footer{
+	background-color: #3c3b3f;
+	text-align: center;
+}
+
+footer .social{
+	float: left;
+}
+
+.site-footer {
+    clear: both;
+    position: relative;
+    height: 300px;
+}
+
+.info_section{
+	height: 150px;
+	color: #fff;
+}
+
+#map{
+	width: 20%; 
+	height: 90%;
+	position: absolute;
+}
+
+#map-canvas { 
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.column-left{
+	float: left;
+	text-align: left;
+	margin-left: 2%;
+	margin-right: auto;
+}
+
+.column-center{
+	float: left;
+	margin-top: 0.5%;
+	margin-left: 2%;
+	margin-right: auto;
+}
+
+.column-right{
+	float: right;
+	margin-top: 0.5%;
+	text-align: left;
+	margin-left: auto;
+	margin-right: 2%;
+}
+
+#copyright{
+	color: #fff;
+	text-align: center;
+}
+/*End footer.php Style Rules*/
+
+
